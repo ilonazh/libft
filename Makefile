@@ -6,7 +6,7 @@
 #    By: ilzhabur <ilzhabur@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/08 10:39:11 by ilzhabur          #+#    #+#              #
-#    Updated: 2023/06/08 11:35:24 by ilzhabur         ###   ########.fr        #
+#    Updated: 2023/07/17 14:35:19 by ilzhabur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,10 +22,10 @@ SRC			=	ft_memcpy.c ft_isalpha.c ft_memmove.c ft_strlcpy.c ft_strrchr.c \
 				ft_strlcat.c ft_strnstr.c ft_calloc.c ft_strdup.c ft_substr.c \
 				ft_strjoin.c ft_strtrim.c ft_itoa.c ft_putchar_fd.c \
 				ft_putstr_fd.c ft_putendl_fd.c ft_split.c ft_putnbr_fd.c \
-				ft_strmapi.c ft_striteri.c ft_hexlen.c ft_numlen.c \
-				ft_puthex.c ft_putnstr.c ft_strndup.c ft_lstnew.c \
+				ft_strmapi.c ft_striteri.c ft_hexlen.c ft_numlen.c free_arr.c\
+				ft_puthex.c ft_putnstr.c ft_strndup.c ft_lstnew.c ft_strnew.c \
 				ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-				ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
+				ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_lstprint.c \
 				printf/ft_printf.c printf/parse_string.c printf/print_char.c \
 				printf/print_flags.c printf/print_hex.c printf/print_integer.c \
 				printf/print_percent.c printf/print_pointer.c \
@@ -35,8 +35,8 @@ SRC			=	ft_memcpy.c ft_isalpha.c ft_memmove.c ft_strlcpy.c ft_strrchr.c \
 
 OBJ			=	$(SRC:.c=.o)
 
-GREEN		=	\033[0;32m
-BLUE		=	\033[0;36m
+GREEN		=	\033[0;92m
+BLUE		=	\033[0;94m
 NC			=	\033[0m
 
 $(NAME): $(OBJ)
@@ -46,11 +46,10 @@ $(NAME): $(OBJ)
 all: $(NAME)
 
 clean:
-	@$(RM) $(OBJ)
-	@echo "${BLUE}All .o files are erased! ${NC}"
+	@$(RM) $(OBJ) --silent
 
 fclean: clean
-	@$(RM) $(NAME) 
+	@$(RM) $(NAME) --silent
 	@echo "${BLUE}$(NAME) is erased! ${NC}"
 
 re: fclean all
