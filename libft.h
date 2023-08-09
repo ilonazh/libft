@@ -6,7 +6,7 @@
 /*   By: ilzhabur <ilzhabur@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:48:54 by abourdon          #+#    #+#             */
-/*   Updated: 2023/07/18 07:03:05 by ilzhabur         ###   ########.fr       */
+/*   Updated: 2023/08/09 12:07:42 by ilzhabur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strnew(size_t size);
+int		ft_strcmp(char *s1, char *s2);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
