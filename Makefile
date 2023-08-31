@@ -6,7 +6,7 @@
 #    By: ilzhabur <ilzhabur@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/08 10:39:11 by ilzhabur          #+#    #+#              #
-#    Updated: 2023/08/25 14:27:08 by ilzhabur         ###   ########.fr        #
+#    Updated: 2023/08/31 15:27:56 by ilzhabur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ SRC			=	ft_memcpy.c ft_isalpha.c ft_memmove.c ft_strlcpy.c ft_strrchr.c \
 				printf/print_percent.c printf/print_pointer.c \
 				printf/print_string.c printf/print_u.c \
 				get_next_line/get_next_line_utils.c get_next_line/get_next_line.c \
-				matrixdup.c ft_strtok.c
+				matrixdup.c ft_strtok.c ft_strcpy.c ft_strncpy.c ft_strcat.c
 
 
 OBJ			=	$(SRC:.c=.o)

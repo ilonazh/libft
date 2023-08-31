@@ -6,7 +6,7 @@
 /*   By: ilzhabur <ilzhabur@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:48:54 by abourdon          #+#    #+#             */
-/*   Updated: 2023/08/25 14:26:53 by ilzhabur         ###   ########.fr       */
+/*   Updated: 2023/08/31 15:26:28 by ilzhabur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,10 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	free_arr(char **arr);
 char	**matrixdup(char **arr);
-char *ft_strtok(char *str, const char *sep);
+char	*ft_strtok(char *str, const char *sep);
+char	*ft_strcpy(char *dest, char *src);
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
+char	*ft_strcat(char *dest, char *src);
+
 
 #endif
