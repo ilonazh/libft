@@ -6,7 +6,7 @@
 /*   By: ilzhabur <ilzhabur@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:48:54 by abourdon          #+#    #+#             */
-/*   Updated: 2023/08/31 15:26:28 by ilzhabur         ###   ########.fr       */
+/*   Updated: 2023/11/12 18:56:24 by ilzhabur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,5 @@ char	*ft_strtok(char *str, const char *sep);
 char	*ft_strcpy(char *dest, char *src);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
 char	*ft_strcat(char *dest, char *src);
-
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ilzhabur <ilzhabur@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/09 12:06:55 by ilzhabur          #+#    #+#             */
-/*   Updated: 2023/08/09 12:07:17 by ilzhabur         ###   ########.fr       */
+/*   Updated: 2023/11/12 18:51:48 by ilzhabur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s1[i] != '\0' || s2[i] != '\0')
@@ -36,4 +36,3 @@ int	ft_strcmp(char *s1, char *s2)
 //     printf("Mine: %d\n", ft_strcmp(s1, s2));
 //     return (0);
 // } 
-

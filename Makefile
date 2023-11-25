@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ilzhabur <ilzhabur@student.42madrid.com    +#+  +:+       +#+         #
+#    By: mpeterso <mpeterso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/08 10:39:11 by ilzhabur          #+#    #+#              #
-#    Updated: 2023/08/31 15:27:56 by ilzhabur         ###   ########.fr        #
+#    Updated: 2023/11/19 11:17:25 by mpeterso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= 	libft.a
-CC			= 	cc
+CC			= 	gcc
 CFLAGS		= 	-Wall -Werror -Wextra
 AR			=	ar rcs
 RM			=	rm -rf
@@ -47,10 +47,10 @@ $(NAME): $(OBJ)
 all: $(NAME)
 
 clean:
-	@$(RM) $(OBJ) --silent
+	@$(RM) $(OBJ) 
 
 fclean: clean
-	@$(RM) $(NAME) --silent
+	@$(RM) $(NAME) 
 	@echo "${BLUE}$(NAME) is erased! ${NC}"
 
 re: fclean all
